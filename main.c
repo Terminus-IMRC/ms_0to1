@@ -204,6 +204,7 @@ int main(int argc, char *argv[])
 				ms_bin_seq_read_open(ifn, flagr, &mbsr, &st);
 				ms_bin_seq_read_set_buffer(bufsize, &mbsr, &st);
 				ms_bin_seq_write_open(ofn, flagw, &mbsw, &st);
+				ms_bin_seq_write_set_buffer(bufsize, &mbsw, &st);
 
 				do {
 					ret = ms_bin_seq_read_next(ms, &mbsr, &st);
