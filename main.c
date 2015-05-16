@@ -111,7 +111,6 @@ int main(int argc, char *argv[])
 				break;
 			case 's':
 				bufsize = atoi(optarg);
-				printf("bufsize: %d\n", bufsize);
 				break;
 			case '?':
 				usage();
